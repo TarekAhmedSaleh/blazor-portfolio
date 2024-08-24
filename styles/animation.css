@@ -1,0 +1,96 @@
+﻿:root {
+    --animation-duration-1: 0.25s;
+    --animation-duration-2: 0.5s;
+    --animation-duration-3: 1s;
+    --animation-duration-4: 2s;
+
+    --animation-delay-1: 0.25s;
+    --animation-delay-2: 0.5s;
+    --animation-delay-3: 1s;
+    --animation-delay-4: 2s;
+}
+
+.ta-animation-duration-1 {
+    animation-duration: var(--animation-duration-1);
+}
+
+.ta-animation-duration-2 {
+    animation-duration: var(--animation-duration-2);
+}
+
+.ta-animation-duration-3 {
+    animation-duration: var(--animation-duration-3);
+}
+
+.ta-animation-duration-4 {
+    animation-duration: var(--animation-duration-4);
+}
+
+.ta-animation-delay-1 {
+    animation-delay: var(--animation-delay-1);
+}
+
+.ta-animation-delay-2 {
+    animation-delay: var(--animation-delay-2);
+}
+
+.ta-animation-delay-3 {
+    animation-delay: var(--animation-delay-3);
+}
+
+.ta-animation-delay-4 {
+    animation-delay: var(--animation-delay-4);
+}
+
+.ta-animation-infinite {
+    animation-iteration-count: infinite;
+}
+
+.ta-animation-fadeInLeft {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation-name: ta-fadeIn-x;
+    animation-fill-mode: forwards;
+}
+
+.ta-animation-fadeInRight {
+    opacity: 0;
+    transform: translateX(100%);
+    animation-name: ta-fadeIn-x;
+    animation-fill-mode: forwards;
+}
+
+.ta-animation-fadeInUp {
+    opacity: 0;
+    transform: translateY(100%);
+    animation-name: ta-fadeIn-y;
+    animation-fill-mode: forwards;
+}
+
+.ta-animation-fadeIn {
+    opacity: 0;
+    animation-name: ta-fadeIn;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ta-fadeIn-x {
+    to {
+        opacity: 100;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes ta-fadeIn-y{
+    to {
+        opacity: 100;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes ta-fadeIn {
+    to {
+        opacity: 100;
+    }
+}
+
+
