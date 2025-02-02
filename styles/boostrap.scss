@@ -1,7 +1,9 @@
 ﻿// Bootstrap Variables
 $primary: #0563bb;
 
-/*$font-family-sans-serif: 'Poppins', sans-serif;*/
+$font-family-sans-serif: 'Poppins', sans-serif;
+$navbar-brand-font-size: 2rem;
+$nav-link-font-size: 1rem;
 
 @import "../bootstrap/scss/bootstrap.scss";
 
