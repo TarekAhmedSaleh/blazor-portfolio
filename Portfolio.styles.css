@@ -897,10 +897,10 @@ social-link-icon-container:hover i[b-wxj0ji1blt] {
 
 
 .nav-bar-menu[b-j9c5fpoimk] {
-    all: unset; /*prevent inherited props*/
     display: flex;
     gap: 1rem;
     list-style: none;
+    margin: 0;
 }
 
 
