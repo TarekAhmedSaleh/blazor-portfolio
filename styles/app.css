@@ -40,37 +40,6 @@ h1:focus, h2:focus {
     content: "\e900";
 }
 
-/*nav bar style*/
-.nav-bar-link {
-    width: fit-content;
-}
-
-    .nav-bar-link:after {
-        content: "";
-        margin-top: 5px;
-        width: 100%;
-        display: block;
-        height: 2px;
-        background: var(--bs-primary);
-        bottom: 0;
-        opacity: 0;
-    }
-    .nav-bar-link:hover::after,
-    .nav-bar-link.active::after {
-        animation: expand-100 0.5s;
-        opacity: 1;
-    }
-
-@keyframes expand-100 {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
 /* HTML: <div class="loader"></div> */
 .loader {
     width: 100px;
